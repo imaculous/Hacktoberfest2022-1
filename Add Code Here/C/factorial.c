@@ -1,17 +1,9 @@
 #include <stdio.h>
-long long int factorial (long long int n){
-        if(n<0)
-            return 0;
-        if(n==0) 
-            return 1;
-        else
-            return n*factorial(n-1);
-    }
-
-int main () {
-    long long int n, total;
-    scanf ("%lld", &n);
-    total = factorial(n);
-    printf ("%d\n", total);
-    return 0;
+void main(){
+  int i,f=1,num;
+  printf("Enter the number : ");
+  scanf("%d",&num);
+  for(i=1;i<=num;i++)
+      f=f*i;
+  printf("Factorial of %d is: %d\n",num,f);
 }
